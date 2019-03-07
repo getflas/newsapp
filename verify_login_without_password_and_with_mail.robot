@@ -5,5 +5,5 @@ Library    BuiltIn
 
 *** Test Cases ***
 verify_login_without_password_and_with_mail
-    &{dict}    Create Dictionary    a=1    c=2
+    &{dict}    Create Dictionary    a=2    c=2
     Set Global Variable    ${dict}
