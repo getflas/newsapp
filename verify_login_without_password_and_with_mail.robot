@@ -5,5 +5,5 @@ Library    BuiltIn
 
 *** Test Cases ***
 verify_login_without_password_and_with_mail
-    Log    a    level=DEBUG
-    @{s}    Create List    "a"    "k"
+    &{dict}    Create Dictionary    a=1    c=2
+    Set Global Variable    ${dict}
