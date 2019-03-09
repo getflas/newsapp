@@ -1,10 +1,10 @@
 *** Settings ***
-Library    BuiltIn
+Library    Jirawrapper    WITH NAME    e
+Library    veera_pa_one_class    WITH NAME    y
 
 *** Variables ***
 
 *** Test Cases ***
 verify_user_creation_with_only_firstname_and_lastname_and_valid_email
-    Log    first name and last name    level=INFO
-    ${status}    Set Variable    200
-    ${status_error}    Set Variable    400
+    ${e}    e.task_creation_abc    qw    wqw    tr    e
+    ${y}    y.veera_pa_three_def    y    y
