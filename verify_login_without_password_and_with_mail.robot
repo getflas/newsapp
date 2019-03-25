@@ -1,18 +1,11 @@
 *** Settings ***
+Library        on	*step1*: Launch [www.stp.com|http://www.stp.com]
 Library    BuiltIn
-Library    Jirawrapper
 
 *** Variables ***
 
 *** Test Cases ***
 verify_login_without_password_and_with_mail
-    ${username}    Set Variable    veera
-    ${password}    Set Variable    nexii
-    ${login_response}        usernaem    apssword    ip
-    Run Keyword If    ${username} == ${veera}
-    ...    Log    user logged in sucessfully ${username}    level=DEBUG
-    ...    ELSE    Log    user login is failed     level=ERROR
-    : For    ${iter_var}    IN    @{usernaem}
-    \    Log    in foer loop iteration     level=INFO
-    : For    ${i}    IN    ${iter_var}
-    \    ${story_response}        story    component    task    keyid
+    Log    dsdsdq    level=INFO
+    ${x}    Set Variable    1
+    ${y}    Set Variable    ${x}
